@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/zsh
 
 total=(`find $@ -name "*.[ch]" -type f | xargs wc --total=only -l | awk '{sum+=$1} END {print sum}'`)
 echo "total: " $total
